@@ -143,7 +143,7 @@ async function selectTable(table){
 
 async function updateStatus(tableID, newStatus){
   if(await tablesDll.update(tableID, newStatus)){
-    isTableOpen = (selectedTable.status === "available");
+    isTableOpen = (newStatus === "available");
     let tablesStatus = await tablesDll.getTablesStatus();
     renderTablesStatus(tablesStatus.available, tablesStatus.occupied);
   }
