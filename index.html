@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Table Manager</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="titles">
+          <h2>Restaurant Table Manager</h2>
+          <p>Open tables, add orders from the menu, print checks in a popup.</p>
+        </div>
+        <div class="status-badges">
+          <span class="badge status-available available-tables">Available</span>
+          <span class="badge status-occupied occupied-tables">Occupied</span>
+        </div>
+      </header>
+      <div class="tables-grid"></div>
+      <div class="btns">
+          <button class="secondary-btn clear-tables">Clear All</button>
+          <button class="primary-btn add-table">Add Table</button>
+        </div>
+      <div class="menu">
+        <h2>Menu</h2>
+        <div class="menu-grid"></div>
+      </div>
+    </div>
+    <div class="checkout">
+      <header>
+          <h3>Active Check</h3>
+          <div class="order-info">
+            <span class="selected-table">none</span>
+            <span>order: #129</span>
+          </div>
+          <span class="material-symbols-outlined">receipt_long</span>
+      </header>
+      <div class="orders-list"></div>
+      <div class="place-order">
+        <div class="total-price-area">
+          <h3>Total Amount:</h3>
+          <span class="total-price">$0</span>
+        </div>
+        <div class="btns">
+          <button class="complete-checkout primary-btn">Complete Checkout</button>
+          <button class="clear-order secondary-btn">Clear</button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>
